@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿照淘宝页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .clearfix::after{
+            display: block;
+            content: '';
+            clear: both;
+        }
+        ul,li{
+            list-style: none;
+        }
+        ul > li {
+            float: left;
+            padding: 4px 0.5em;
+            line-height: 32px;
+        }
+        ul {
+
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+        }
+        .logo {
+            background:grey;
+            display: inline-block;
+            float: left;
+            margin-top: 8px;
+   
+        }
+        .logo>img{
+            height: 25px;
+            vertical-align: top;
+        }
+        .nav {
+            float: right;
+            margin-left: 20px;
+        }
+        header {
+            background: grey;
+            color: red;
+        }
+        .header-wrap {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .content {
+            width: 1000px;
+            margin-top: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .aside{
+            height: 400px;
+            width: 250px;
+            float: left;
+            background-color: rgb(78, 54, 54);
+        }
+        .main{
+            height: 400px;
+            width: 500px;
+            float: left;
+            background-color: rgb(216, 31, 31);
+        }
+        .ad{
+            height: 400px;
+            width: 250px;
+            float: left;
+            background-color: rgb(149, 201, 27);
+        }
+        .imagelist{
+            outline: 1px solid greenyellow;
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+        .x{
+            margin-right: -12px;
+        }
+        .image{
+            background-color: rgb(55, 189, 28);
+            width: 191px;
+            height: 191px;
+            float: left;
+            margin-right: 12px;
+            margin-top: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="header-wrap">
+        <div class="logo">
+            <img src="https://xiedaimala.com/packs/_/assets/images/logos/red-logo-3f8db9041e6c15d4ae7ed7e4087c4b98.png" alt="">
+        </div>
+        <ul class="clearfix nav">
+            <li>商家</li>
+            <li>商品</li>
+            <li>分类</li>
+            <li>排行</li>
+        </ul>
+    </div>
+    </header>
+    <div class="content clearfix">
+        <div class="aside">我是一行字</div>
+        <div class="main"></div>
+        <div class="ad"></div>
+    </div>
+    <div class="imagelist ">
+        <div class="x clearfix">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </div>
+</body>
+</html>
