@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float布局默写</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .logo {
+            border: 1px solid yellow;
+            height: 50px;
+            width: 250px;
+            float: left;
+            margin-top: 5px;
+        }
+        .say {
+            border: 1px solid pink;
+            height: 60px;
+            width: 300px;
+            float: right;
+        }
+        header {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="logo">logo</div>
+        <div class="say">say something</div>
+    </header>
+</body>
+</html>

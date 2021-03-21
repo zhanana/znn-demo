@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float布局</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .logo {
+            border: 1px solid red;
+            height: 40px;
+            width: 100px;
+            float: left;
+            margin-top: 5px;
+        }
+        nav {
+            border: 1px solid green;
+            height:50px;
+            width: 200px;
+            float: right;
+        }
+        header {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="logo">XDML</div>
+        <nav>导航</nav>
+    </header>   
+</body>
+</html>
