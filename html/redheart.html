@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love you small fish</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .heart:hover {
+            transform: scale(1.5);
+            /* 放大1.5倍 */
+        }
+        .heart {
+            margin: 200px;
+            position: relative;
+            display: inline-block;
+            transition: all 0.5s;      
+            /* 时间间隔0.5s */
+        }
+        .bottom {
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+            background: red;
+        }
+        .left {
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            transform: rotate(45deg) translateY(48px);/*先旋转45度，再沿着Y轴移动  */
+            background: red;
+        }
+        .right {
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 0 0 50%;
+            position: absolute;
+            bottom: 100%;
+            right: 100%;
+            transform: rotate(45deg) translateX(48px);
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
